@@ -1,97 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tam Dan - Smart POS for Cambodian Businesses</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter for general text, Khmer OS Siemreap for Khmer -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-</head>
-<body class="bg-gray-50">
+  </head>
+  <body class="bg-gray-50">
     <!-- Header / Language Switcher -->
     <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <h1 class="text-xl font-bold text-blue-600">Tam Dan</h1>
-            </div>
-            <div class="language-switcher">
-                <button class="flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors" id="languageBtn">
-                    <i class="fas fa-globe mr-2"></i> English <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                </button>
-                <div class="language-dropdown" id="languageDropdown">
-                    <a href="#" class="font-medium" data-lang="en">English</a>
-                    <a href="#" class="font-khmer font-medium" data-lang="kh">ខ្មែរ</a>
-                </div>
-            </div>
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <h1 class="text-xl font-bold text-blue-600">Tam Dan Rg Ke</h1>
         </div>
+        <div class="language-switcher">
+          <button
+            class="flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
+            id="languageBtn"
+          >
+            <i class="fas fa-globe mr-2"></i> English
+            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </button>
+          <div class="language-dropdown" id="languageDropdown">
+            <a href="#" class="font-medium" data-lang="en">English</a>
+            <a href="#" class="font-khmer font-medium" data-lang="kh">ខ្មែរ</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="gradient-bg text-white py-16 md:py-24 text-center relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-10 left-10 w-20 h-20 bg-white rounded-full"></div>
-            <div class="absolute top-40 right-20 w-16 h-16 bg-white rounded-full"></div>
-            <div class="absolute bottom-20 left-1/3 w-24 h-24 bg-white rounded-full"></div>
+    <section
+      class="gradient-bg text-white py-16 md:py-24 text-center relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-10 left-10 w-20 h-20 bg-white rounded-full"
+        ></div>
+        <div
+          class="absolute top-40 right-20 w-16 h-16 bg-white rounded-full"
+        ></div>
+        <div
+          class="absolute bottom-20 left-1/3 w-24 h-24 bg-white rounded-full"
+        ></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <h1
+          class="text-4xl md:text-6xl font-bold mb-4 leading-tight"
+          data-aos="fade-up"
+        >
+          Tam Dan
+          <span class="block text-2xl md:text-4xl mt-2 font-khmer font-normal"
+            >តាមដាន</span
+          >
+        </h1>
+        <p
+          class="text-xl md:text-2xl mb-8 opacity-90"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Manage Your Shop Smarter — In Khmer and Easy to Use!
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a href="#pricing" class="btn-primary">Start Free Trial</a>
+          <a href="#contact" class="btn-secondary">Request a Demo</a>
         </div>
-        <div class="container mx-auto px-4 relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight" data-aos="fade-up">
-                Tam Dan <span class="block text-2xl md:text-4xl mt-2 font-khmer font-normal">តាមដាន</span>
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
-                Manage Your Shop Smarter — In Khmer and Easy to Use!
-            </p>
-            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6" data-aos="fade-up" data-aos-delay="200">
-                <a href="#pricing" class="btn-primary">Start Free Trial</a>
-                <a href="#contact" class="btn-secondary">Request a Demo</a>
-            </div>
-            <!-- Visual: Image or mockup of a phone with POS screen -->
-            <div class="mt-12 md:mt-16" data-aos="fade-up" data-aos-delay="300">
-                <img src="images/2.jpeg" alt="Tam Dan POS System on Phone" class="mx-auto rounded-xl shadow-2xl max-w-full h-auto transform hover:scale-105 transition-transform duration-500">
-            </div>
+        <!-- Visual: Image or mockup of a phone with POS screen -->
+        <div class="mt-12 md:mt-16" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="images/2.jpeg"
+            alt="Tam Dan POS System on Phone"
+            class="mx-auto rounded-xl shadow-2xl max-w-full h-auto transform hover:scale-105 transition-transform duration-500"
+          />
         </div>
+      </div>
     </section>
 
     <!-- Problem Statement Section -->
     <section class="bg-white py-16 md:py-20">
-        <div class="container mx-auto px-4 text-center max-w-3xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800" data-aos="fade-up">
-                Still Using Notebooks or Excel to Manage Your Shop?
-            </h2>
-            <p class="text-lg md:text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="100">
-                Managing a small business in Cambodia can be tough, especially when you're relying on old methods. Are you experiencing these common frustrations?
-            </p>
-            <ul class="text-left space-y-4 text-lg md:text-xl text-gray-700">
-                <li class="flex items-start" data-aos="fade-right" data-aos-delay="200">
-                    <i class="fas fa-times-circle text-red-500 mt-1 mr-3 flex-shrink-0"></i>
-                    <span><strong class="font-semibold">Can't track stock accurately:</strong> Never know exactly what you have on hand, leading to missed sales or overstocking.</span>
-                </li>
-                <li class="flex items-start" data-aos="fade-right" data-aos-delay="300">
-                    <i class="fas fa-chart-line text-orange-500 mt-1 mr-3 flex-shrink-0"></i>
-                    <span><strong class="font-semibold">No idea what's selling most:</strong> Struggling to identify your best-selling products and make smart purchasing decisions.</span>
-                </li>
-                <li class="flex items-start" data-aos="fade-right" data-aos-delay="400">
-                    <i class="fas fa-book text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                    <span><strong class="font-semibold">Hard to keep daily records:</strong> Spending too much time on manual entries and still worrying about errors.</span>
-                </li>
-            </ul>
-            <p class="text-lg md:text-xl text-gray-600 mt-8" data-aos="fade-up" data-aos-delay="500">
-                <strong>Tam Dan is here to change that</strong>
-            </p>
-        </div>
+      <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-8 text-gray-800"
+          data-aos="fade-up"
+        >
+          Still Using Notebooks or Excel to Manage Your Shop?
+        </h2>
+        <p
+          class="text-lg md:text-xl text-gray-600 mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Managing a small business in Cambodia can be tough, especially when
+          you're relying on old methods. Are you experiencing these common
+          frustrations?
+        </p>
+        <ul class="text-left space-y-4 text-lg md:text-xl text-gray-700">
+          <li
+            class="flex items-start"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <i
+              class="fas fa-times-circle text-red-500 mt-1 mr-3 flex-shrink-0"
+            ></i>
+            <span
+              ><strong class="font-semibold"
+                >Can't track stock accurately:</strong
+              >
+              Never know exactly what you have on hand, leading to missed sales
+              or overstocking.</span
+            >
+          </li>
+          <li
+            class="flex items-start"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <i
+              class="fas fa-chart-line text-orange-500 mt-1 mr-3 flex-shrink-0"
+            ></i>
+            <span
+              ><strong class="font-semibold"
+                >No idea what's selling most:</strong
+              >
+              Struggling to identify your best-selling products and make smart
+              purchasing decisions.</span
+            >
+          </li>
+          <li
+            class="flex items-start"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <i class="fas fa-book text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+            <span
+              ><strong class="font-semibold"
+                >Hard to keep daily records:</strong
+              >
+              Spending too much time on manual entries and still worrying about
+              errors.</span
+            >
+          </li>
+        </ul>
+        <p
+          class="text-lg md:text-xl text-gray-600 mt-8"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <strong>Tam Dan is here to change that</strong>
+        </p>
+      </div>
     </section>
 
     <!-- Features Overview Section -->
     <section class="bg-gray-100 py-16 md:py-20">
+
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up" style="font-family: cursive;">
                 Features Designed for Cambodian Small Businesses
@@ -138,74 +225,152 @@
                     <p class="text-gray-600" style="font-family: cursive;">Use the app comfortably in your native language.</p>
                 </div>
             </div>
+
         </div>
+      </div>
     </section>
 
     <!-- How It Works Section -->
     <section class="bg-white py-16 md:py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">
-                How It Works: Simple Steps to a Smarter Shop
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
-                <!-- Step 1 -->
-                <div class="flex flex-col items-center p-6 rounded-xl bg-blue-50" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">1</div>
-                    <i class="fas fa-user-plus text-blue-600 text-3xl mb-3"></i>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Sign Up</h3>
-                    <p class="text-gray-600 text-center">Create your account in minutes.</p>
-                </div>
-                <!-- Arrow/Separator for desktop -->
-                <div class="hidden lg:flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
-                    <i class="fas fa-arrow-right text-blue-400 text-3xl"></i>
-                </div>
-                <!-- Arrow/Separator for mobile -->
-                <div class="lg:hidden flex items-center justify-center py-4" data-aos="fade-up" data-aos-delay="150">
-                    <i class="fas fa-arrow-down text-blue-400 text-3xl"></i>
-                </div>
-                <!-- Step 2 -->
-                <div class="flex flex-col items-center p-6 rounded-xl bg-blue-50" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">2</div>
-                    <i class="fas fa-boxes text-blue-600 text-3xl mb-3"></i>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Add Products</h3>
-                    <p class="text-gray-600 text-center">Quickly input your inventory.</p>
-                </div>
-                <!-- Arrow/Separator for desktop -->
-                <div class="hidden lg:flex items-center justify-center" data-aos="fade-up" data-aos-delay="250">
-                    <i class="fas fa-arrow-right text-blue-400 text-3xl"></i>
-                </div>
-                <!-- Arrow/Separator for mobile -->
-                <div class="lg:hidden flex items-center justify-center py-4" data-aos="fade-up" data-aos-delay="250">
-                    <i class="fas fa-arrow-down text-blue-400 text-3xl"></i>
-                </div>
-                <!-- Step 3 -->
-                <div class="flex flex-col items-center p-6 rounded-xl bg-blue-50" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">3</div>
-                    <i class="fas fa-store text-blue-600 text-3xl mb-3"></i>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Start Selling</h3>
-                    <p class="text-gray-600 text-center">Process sales effortlessly.</p>
-                </div>
-                <!-- Arrow/Separator for desktop -->
-                <div class="hidden lg:flex items-center justify-center" data-aos="fade-up" data-aos-delay="350">
-                    <i class="fas fa-arrow-right text-blue-400 text-3xl"></i>
-                </div>
-                <!-- Arrow/Separator for mobile -->
-                <div class="lg:hidden flex items-center justify-center py-4" data-aos="fade-up" data-aos-delay="350">
-                    <i class="fas fa-arrow-down text-blue-400 text-3xl"></i>
-                </div>
-                <!-- Step 4 -->
-                <div class="flex flex-col items-center p-6 rounded-xl bg-blue-50" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">4</div>
-                    <i class="fas fa-file-invoice-dollar text-blue-600 text-3xl mb-3"></i>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Get Reports</h3>
-                    <p class="text-gray-600 text-center">Access instant insights into your business.</p>
-                </div>
+      <div class="container mx-auto px-4 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-12 text-gray-800"
+          data-aos="fade-up"
+        >
+          How It Works: Simple Steps to a Smarter Shop
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center"
+        >
+          <!-- Step 1 -->
+          <div
+            class="flex flex-col items-center p-6 rounded-xl bg-blue-50"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4"
+            >
+              1
             </div>
+            <i class="fas fa-user-plus text-blue-600 text-3xl mb-3"></i>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">Sign Up</h3>
+            <p class="text-gray-600 text-center">
+              Create your account in minutes.
+            </p>
+          </div>
+          <!-- Arrow/Separator for desktop -->
+          <div
+            class="hidden lg:flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <i class="fas fa-arrow-right text-blue-400 text-3xl"></i>
+          </div>
+          <!-- Arrow/Separator for mobile -->
+          <div
+            class="lg:hidden flex items-center justify-center py-4"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <i class="fas fa-arrow-down text-blue-400 text-3xl"></i>
+          </div>
+          <!-- Step 2 -->
+          <div
+            class="flex flex-col items-center p-6 rounded-xl bg-blue-50"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4"
+            >
+              2
+            </div>
+            <i class="fas fa-boxes text-blue-600 text-3xl mb-3"></i>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">
+              Add Products
+            </h3>
+            <p class="text-gray-600 text-center">
+              Quickly input your inventory.
+            </p>
+          </div>
+          <!-- Arrow/Separator for desktop -->
+          <div
+            class="hidden lg:flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <i class="fas fa-arrow-right text-blue-400 text-3xl"></i>
+          </div>
+          <!-- Arrow/Separator for mobile -->
+          <div
+            class="lg:hidden flex items-center justify-center py-4"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <i class="fas fa-arrow-down text-blue-400 text-3xl"></i>
+          </div>
+          <!-- Step 3 -->
+          <div
+            class="flex flex-col items-center p-6 rounded-xl bg-blue-50"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4"
+            >
+              3
+            </div>
+            <i class="fas fa-store text-blue-600 text-3xl mb-3"></i>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">
+              Start Selling
+            </h3>
+            <p class="text-gray-600 text-center">Process sales effortlessly.</p>
+          </div>
+          <!-- Arrow/Separator for desktop -->
+          <div
+            class="hidden lg:flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <i class="fas fa-arrow-right text-blue-400 text-3xl"></i>
+          </div>
+          <!-- Arrow/Separator for mobile -->
+          <div
+            class="lg:hidden flex items-center justify-center py-4"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <i class="fas fa-arrow-down text-blue-400 text-3xl"></i>
+          </div>
+          <!-- Step 4 -->
+          <div
+            class="flex flex-col items-center p-6 rounded-xl bg-blue-50"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4"
+            >
+              4
+            </div>
+            <i
+              class="fas fa-file-invoice-dollar text-blue-600 text-3xl mb-3"
+            ></i>
+            <h3 class="text-xl font-semibold mb-2 text-gray-800">
+              Get Reports
+            </h3>
+            <p class="text-gray-600 text-center">
+              Access instant insights into your business.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Screenshots or Demo Video Section -->
     <section class="bg-gray-100 py-16 md:py-20">
+
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">
                 See Moew Moew Moew in Action
@@ -222,116 +387,196 @@
                     <p class="text-gray-700 font-semibold">Moew Moew Moew </p>
                 </div>
             </div>
+
         </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="bg-blue-50 py-16 md:py-20">
-        <div class="container mx-auto px-4 text-center max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">
-                What Our Users Say
-            </h2>
-            <div class="testimonial-slider">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-slide active">
-                    <div class="bg-white p-8 rounded-xl shadow-lg italic text-lg md:text-xl text-gray-700 relative">
-                        <i class="fas fa-quote-left text-blue-300 text-5xl absolute -top-4 left-4 opacity-50"></i>
-                        <p class="mb-4">
-                            "Before Tam Dan, managing my small grocery shop was a headache. Now, I know exactly what I have in stock and what my customers are buying most. It's so easy to use, even for me!"
-                        </p>
-                        <i class="fas fa-quote-right text-blue-300 text-5xl absolute -bottom-4 right-4 opacity-50"></i>
-                        <p class="font-semibold text-right mt-6 text-gray-800">
-                            — Ms. Srey Leak, Small Grocery Shop Owner, Phnom Penh
-                        </p>
-                    </div>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="testimonial-slide">
-                    <div class="bg-white p-8 rounded-xl shadow-lg italic text-lg md:text-xl text-gray-700 relative">
-                        <i class="fas fa-quote-left text-blue-300 text-5xl absolute -top-4 left-4 opacity-50"></i>
-                        <p class="mb-4">
-                            "The Khmer language support made all the difference for my staff. They can now use the system confidently without language barriers. Our sales tracking has improved dramatically!"
-                        </p>
-                        <i class="fas fa-quote-right text-blue-300 text-5xl absolute -bottom-4 right-4 opacity-50"></i>
-                        <p class="font-semibold text-right mt-6 text-gray-800">
-                            — Mr. Vannak, Restaurant Owner, Siem Reap
-                        </p>
-                    </div>
-                </div>
-                <!-- Testimonial 3 -->
-                <div class="testimonial-slide">
-                    <div class="bg-white p-8 rounded-xl shadow-lg italic text-lg md:text-xl text-gray-700 relative">
-                        <i class="fas fa-quote-left text-blue-300 text-5xl absolute -top-4 left-4 opacity-50"></i>
-                        <p class="mb-4">
-                            "The offline capability is a game-changer for my business in areas with unstable internet. I can continue selling without interruption and everything syncs when I'm back online."
-                        </p>
-                        <i class="fas fa-quote-right text-blue-300 text-5xl absolute -bottom-4 right-4 opacity-50"></i>
-                        <p class="font-semibold text-right mt-6 text-gray-800">
-                            — Mrs. Sopheak, Clothing Store Owner, Battambang
-                        </p>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4 text-center max-w-4xl">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-12 text-gray-800"
+          data-aos="fade-up"
+        >
+          What Our Users Say
+        </h2>
+        <div class="testimonial-slider">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide active">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg italic text-lg md:text-xl text-gray-700 relative"
+            >
+              <i
+                class="fas fa-quote-left text-blue-300 text-5xl absolute -top-4 left-4 opacity-50"
+              ></i>
+              <p class="mb-4">
+                "Before Tam Dan, managing my small grocery shop was a headache.
+                Now, I know exactly what I have in stock and what my customers
+                are buying most. It's so easy to use, even for me!"
+              </p>
+              <i
+                class="fas fa-quote-right text-blue-300 text-5xl absolute -bottom-4 right-4 opacity-50"
+              ></i>
+              <p class="font-semibold text-right mt-6 text-gray-800">
+                — Ms. Srey Leak, Small Grocery Shop Owner, Phnom Penh
+              </p>
             </div>
-            <div class="flex justify-center mt-6">
-                <div class="nav-dot active" data-slide="0"></div>
-                <div class="nav-dot" data-slide="1"></div>
-                <div class="nav-dot" data-slide="2"></div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg italic text-lg md:text-xl text-gray-700 relative"
+            >
+              <i
+                class="fas fa-quote-left text-blue-300 text-5xl absolute -top-4 left-4 opacity-50"
+              ></i>
+              <p class="mb-4">
+                "The Khmer language support made all the difference for my
+                staff. They can now use the system confidently without language
+                barriers. Our sales tracking has improved dramatically!"
+              </p>
+              <i
+                class="fas fa-quote-right text-blue-300 text-5xl absolute -bottom-4 right-4 opacity-50"
+              ></i>
+              <p class="font-semibold text-right mt-6 text-gray-800">
+                — Mr. Vannak, Restaurant Owner, Siem Reap
+              </p>
             </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg italic text-lg md:text-xl text-gray-700 relative"
+            >
+              <i
+                class="fas fa-quote-left text-blue-300 text-5xl absolute -top-4 left-4 opacity-50"
+              ></i>
+              <p class="mb-4">
+                "The offline capability is a game-changer for my business in
+                areas with unstable internet. I can continue selling without
+                interruption and everything syncs when I'm back online."
+              </p>
+              <i
+                class="fas fa-quote-right text-blue-300 text-5xl absolute -bottom-4 right-4 opacity-50"
+              ></i>
+              <p class="font-semibold text-right mt-6 text-gray-800">
+                — Mrs. Sopheak, Clothing Store Owner, Battambang
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="flex justify-center mt-6">
+          <div class="nav-dot active" data-slide="0"></div>
+          <div class="nav-dot" data-slide="1"></div>
+          <div class="nav-dot" data-slide="2"></div>
+        </div>
+      </div>
     </section>
 
     <!-- Pricing Plans Section -->
     <section id="pricing" class="bg-white py-16 md:py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">
-                Flexible Pricing Plans
-            </h2>
-            <p class="text-lg md:text-xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">Choose the plan that fits your business needs.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Free Tier Card -->
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 pricing-card" data-aos="fade-right" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Free Tier</h3>
-                    <p class="text-4xl font-bold text-blue-600 mb-6">
-                        $0<span class="text-xl text-gray-500">/month</span>
-                    </p>
-                    <ul class="text-left text-gray-700 space-y-3 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to <strong class="font-semibold">50 products</strong></li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Basic sales functions</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Ideal for very small businesses or trying out the system.</li>
-                        <li class="flex items-center opacity-60"><i class="fas fa-times-circle text-red-400 mr-2"></i>No report export</li>
-                        <li class="flex items-center opacity-60"><i class="fas fa-times-circle text-red-400 mr-2"></i>Single user</li>
-                    </ul>
-                    <a href="#contact" class="btn-primary w-full block text-center">Start Free Trial</a>
-                </div>
+      <div class="container mx-auto px-4 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-12 text-gray-800"
+          data-aos="fade-up"
+        >
+          Flexible Pricing Plans
+        </h2>
+        <p
+          class="text-lg md:text-xl text-gray-600 mb-12"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Choose the plan that fits your business needs.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Free Tier Card -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 pricing-card"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Free Tier</h3>
+            <p class="text-4xl font-bold text-blue-600 mb-6">
+              $0<span class="text-xl text-gray-500">/month</span>
+            </p>
+            <ul class="text-left text-gray-700 space-y-3 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>Up to
+                <strong class="font-semibold">50 products</strong>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>Basic
+                sales functions
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>Ideal for
+                very small businesses or trying out the system.
+              </li>
+              <li class="flex items-center opacity-60">
+                <i class="fas fa-times-circle text-red-400 mr-2"></i>No report
+                export
+              </li>
+              <li class="flex items-center opacity-60">
+                <i class="fas fa-times-circle text-red-400 mr-2"></i>Single user
+              </li>
+            </ul>
+            <a href="#contact" class="btn-primary w-full block text-center"
+              >Start Free Trial</a
+            >
+          </div>
 
-                <!-- Premium Plan Card -->
-                <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-blue-600 pricing-card relative" data-aos="fade-left" data-aos-delay="200">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow-md">Recommended</div>
-                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Premium</h3>
-                    <p class="text-4xl font-bold text-blue-600 mb-6">
-                        $5<span class="text-xl text-gray-500">/month</span>
-                    </p>
-                    <ul class="text-left text-gray-700 space-y-3 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><strong class="font-semibold">Unlimited products</strong></li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><strong class="font-semibold">Export</strong> sales reports</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><strong class="font-semibold">Multi-user</strong> access</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Priority customer support</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Perfect for growing small businesses.</li>
-                    </ul>
-                    <a href="#contact" class="btn-primary w-full block text-center">Get Premium Now</a>
-                </div>
+          <!-- Premium Plan Card -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg border-2 border-blue-600 pricing-card relative"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow-md"
+            >
+              Recommended
             </div>
+            <h3 class="text-2xl font-bold text-blue-600 mb-4">Premium</h3>
+            <p class="text-4xl font-bold text-blue-600 mb-6">
+              $5<span class="text-xl text-gray-500">/month</span>
+            </p>
+            <ul class="text-left text-gray-700 space-y-3 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i
+                ><strong class="font-semibold">Unlimited products</strong>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i
+                ><strong class="font-semibold">Export</strong> sales reports
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i
+                ><strong class="font-semibold">Multi-user</strong> access
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>Priority
+                customer support
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i>Perfect
+                for growing small businesses.
+              </li>
+            </ul>
+            <a href="#contact" class="btn-primary w-full block text-center"
+              >Get Premium Now</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact + Footer Section -->
     <footer id="contact" class="bg-gray-800 text-gray-300 py-16 md:py-20">
 
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Contact Info -->
-
             <div>
-                <h2 class="text-3xl font-bold text-white mb-6" data-aos="fade-up">Get In Touch</h2>
+                <h2 class="text-3xl font-bold text-white mb-6" data-aos="fade-up">Keep In Touch With Steav</h2>
                 <p class="text-lg mb-4" data-aos="fade-up" data-aos-delay="100">Ready to transform your business? Contact us today for a demo or more information!</p>
                 <div class="space-y-3 text-lg" data-aos="fade-up" data-aos-delay="200">
                     <p><i class="fas fa-phone-alt text-blue-400 mr-3"></i><a href="tel:+855012345678" class="hover:text-white transition-colors duration-200">+855 (0) 12 345 678</a></p>
@@ -342,8 +587,6 @@
                     <a href="https://t.me/tamdan_channel" target="_blank" class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
-
-            <!-- Demo Request Form -->
             <div>
                 <h3 class="text-2xl font-bold text-white mb-6" data-aos="fade-up">Request a Demo</h3>
                 <form class="space-y-4" id="demoForm" data-aos="fade-up" data-aos-delay="100">
@@ -353,7 +596,7 @@
                     </div>
                     <div>
                         <label for="business" class="sr-only">Business Name</label>
-                        <input type="text" id="business" name="business" placeholder="Business Name" class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                        <input type="text" id="business" name="business" placeholder="Your Gang Name" class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
                     </div>
                     <div>
                         <label for="phone" class="sr-only">Phone Number</label>
@@ -361,19 +604,57 @@
                     </div>
                     <div>
                         <label for="email" class="sr-only">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Email Address" class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        <input type="email" id="email" name="email" placeholder="Address" class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
                     </div>
                     <div>
                         <label for="message" class="sr-only">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Your Message (e.g., preferred demo time)" class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Experience" class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
                     </div>
                     <button type="submit" class="btn-primary w-full">Submit Request</button>
                 </form>
             </div>
+            <div>
+              <label for="phone" class="sr-only">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+                class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="sr-only">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+              />
+            </div>
+            <div>
+              <label for="message" class="sr-only">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Your Message (e.g., preferred demo time)"
+                class="form-field w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full">
+              Submit Request
+            </button>
+          </form>
         </div>
-        <div class="container mx-auto px-4 text-center mt-12 text-sm text-gray-500">
-            <p>&copy; 2025 Tam Dan. All rights reserved.</p>
-        </div>
+      </div>
+      <div
+        class="container mx-auto px-4 text-center mt-12 text-sm text-gray-500"
+      >
+        <p>&copy; 2025 Tam Dan. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
